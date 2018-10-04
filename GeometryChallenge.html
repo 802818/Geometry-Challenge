@@ -26,14 +26,17 @@
     var y = 10;
     var size = 50;
     ctx.fillStyle = "red";
-    for (var i=0; i<10; i++) {
+    for(var r = 0;  r<10; r++) {
+    for (var c=0; c<10; c++) {
 		ctx.fillRect(x,y,size,size);
 		x+=60;
-        y+=60;
         size -=5;
 	//take original (size - new size)/2 = margin take y and add margin
     }
-  
+        y +=60;
+        x = 10;
+        size = 50;
+    }
 </script>
 </body>
 </html>
